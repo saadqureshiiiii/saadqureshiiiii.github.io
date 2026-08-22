@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Saad Hassan Qureshi | DevOps &amp; Cloud Infrastructure Engineer</title>
+  <meta name="description"
+    content="Portfolio of Saad Hassan Qureshi - Junior DevOps Engineer specializing in Linux, AWS, Docker, Kubernetes, Git, CI/CD, and Cloud Networking." />
+  <meta name="author" content="Saad Hassan Qureshi" />
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Top System Status Ribbon -->
+  <aside class="top-status-bar">
+    <div class="container status-content">
+      <div class="status-left">
+        <span class="pulse-dot"></span>
+        <span class="status-text"><strong>Status:</strong> 99.99% Uptime &bull; Open for DevOps Roles</span>
+      </div>
+      <a href="#contact" class="status-cta">Get in Touch &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <span class="terminal-prefix">&gt;</span> saad_qureshi<span class="cursor">_</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#pipeline" class="nav-link">CI/CD Flow</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#terminal" class="nav-link">CLI</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button type="button" class="btn btn-outline btn-sm cv-btn" id="cv-btn-nav">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+            <line x1="12" y1="18" x2="12" y2="12" />
+            <line x1="9" y1="15" x2="15" y2="15" />
+          </svg>
+          <span>CV</span>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm hire-btn">Hire Me</a>
+
+        <!-- Mobile Hamburger Toggle -->
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar bar-1"></span>
+          <span class="bar bar-2"></span>
+          <span class="bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-text-col">
+        <div class="badge-role">
+          <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+          </svg>
+          <span>DevOps &amp; Cloud Infrastructure</span>
+        </div>
+        <h1 class="hero-title">
+          Hi, I'm <span class="text-highlight">Saad Hassan Qureshi</span>.
+        </h1>
+        <p class="hero-subtitle">
+          Architecting resilient cloud systems, automating high-throughput CI/CD pipelines, and orchestrating container
+          workloads across <strong>Linux, AWS, Docker, and Kubernetes</strong>.
+        </p>
+
+        <!-- Dynamic Stats Counter -->
+        <div class="hero-stats">
+          <div class="stat-card">
+            <div class="stat-value"><span class="stat-number" data-target="7">0</span>+</div>
+            <div class="stat-label">Cloud Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value"><span class="stat-number" data-target="100">0</span>%</div>
+            <div class="stat-label">Containerized</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value"><span class="stat-number" data-target="99">0</span>.99%</div>
+            <div class="stat-label">Uptime Mindset</div>
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 17l6-6-6-6M12 19h8" />
+            </svg>
+            Explore Projects
+          </a>
+          <button type="button" class="btn btn-outline cv-btn" id="cv-btn-hero">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download CV
+          </button>
+          <a href="#terminal" class="btn btn-ghost">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M7 15h10M7 9l3 3-3 3" />
+            </svg>
+            Run CLI
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Terminal / System Monitor Preview -->
+      <div class="hero-card-col">
+        <div class="system-monitor-card">
+          <div class="card-header-bar">
+            <div class="window-dots">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <span class="window-title">saad@infra-control-node:~</span>
+            <span class="badge-status-live">ONLINE</span>
+          </div>
+
+          <div class="system-monitor-body">
+            <div class="metric-row">
+              <span class="metric-name">OS &amp; Kernel:</span>
+              <span class="metric-value font-mono">Linux (Ubuntu / RHEL)</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-name">Cloud Provider:</span>
+              <span class="metric-value font-mono text-accent">AWS (EKS, VPC, RDS, S3)</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-name">Orchestrator:</span>
+              <span class="metric-value font-mono text-cyan">Kubernetes &bull; Docker</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-name">CI/CD &amp; IaC:</span>
+              <span class="metric-value font-mono">GitHub Actions &bull; ArgoCD &bull; Terraform</span>
+            </div>
+            <div class="metric-row">
+              <span class="metric-name">Networking:</span>
+              <span class="metric-value font-mono">TCP/IP &bull; VPC Peering &bull; NGINX</span>
+            </div>
+
+            <div class="code-preview-snippet">
+              <div class="code-line"><span class="code-cmd">$</span> kubectl get pods -n production</div>
+              <div class="code-output text-success">&#x2714; api-gateway-7f89d-9kl2 [1/1 Running]</div>
+              <div class="code-output text-success">&#x2714; auth-service-6b45a-x841 [1/1 Running]</div>
+              <div class="code-output text-success">&#x2714; worker-daemon-5c91z-m2 [1/1 Running]</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;overview&gt;</span>
+        <h2 class="section-title">About Me &amp; Philosophy</h2>
+        <p class="section-subtitle">Bridging the gap between software development and rock-solid cloud infrastructure.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card main-bio">
+          <h3>DevOps Mindset &amp; Foundation</h3>
+          <p>
+            I am <strong>Saad Hassan Qureshi</strong>, a passionate DevOps and Cloud Infrastructure Specialist currently
+            pursuing my
+            <strong>Bachelor of Science in Computer Science (2024 – 2028)</strong>. I unite deep computer science and
+            networking fundamentals with modern automated cloud practices.
+          </p>
+          <p>
+            With practical industry experience as a <strong>Junior DevOps Specialist Intern at Burjsoft (May 2026 –
+              August 2026)</strong> and formal certification under the <strong>Honhaar Jawan Program (Government of
+              Pakistan)</strong>, I engineer systems designed for high availability, automated security (DevSecOps),
+            zero downtime, and fast rollbacks.
+          </p>
+          <div class="tag-cloud">
+            <span class="tag">Linux SysAdmin</span>
+            <span class="tag">Git &amp; GitHub</span>
+            <span class="tag">AWS Cloud</span>
+            <span class="tag">Docker Containers</span>
+            <span class="tag">Kubernetes</span>
+            <span class="tag">CI/CD Pipelines</span>
+            <span class="tag">Terraform IaC</span>
+            <span class="tag">Computer Science BS</span>
+          </div>
+        </div>
+
+        <div class="about-features">
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h4>Immutable Infrastructure</h4>
+              <p>Treating servers as disposable and reproducible assets using Docker, Terraform, and automated
+                configuration.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h4>Zero-Downtime Releases</h4>
+              <p>Implementing Blue/Green and Canary deployments to ensure zero service disruption during upgrades.</p>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 20V10M12 20V4M6 20v-6" />
+              </svg>
+            </div>
+            <div class="feature-content">
+              <h4>Continuous Observability</h4>
+              <p>Monitoring metrics, cluster logs, and alerts with Prometheus and Grafana before incidents impact users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;tech-stack&gt;</span>
+        <h2 class="section-title">Technical Competencies</h2>
+        <p class="section-subtitle">A detailed breakdown of tools, platforms, and protocols in my everyday DevOps
+          toolkit.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Linux -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrap icon-linux">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="4" y="4" width="16" height="16" rx="2" />
+                <circle cx="9" cy="9" r="2" />
+                <path d="M15 9h.01M9 15h6" />
+              </svg>
+            </div>
+            <div>
+              <h3>Linux &amp; OS Administration</h3>
+              <span class="skill-level">Core Foundation</span>
+            </div>
+          </div>
+          <p>Ubuntu, Debian, RHEL, Bash automation scripting, systemd service management, storage management, and
+            baseline security hardening.</p>
+          <div class="skill-pills">
+            <span>Ubuntu</span><span>RHEL</span><span>Bash</span><span>Systemd</span><span>Cron</span><span>SSH
+              Hardening</span>
+          </div>
+        </div>
+
+        <!-- Git -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrap icon-git">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="18" cy="18" r="3" />
+                <circle cx="6" cy="6" r="3" />
+                <circle cx="6" cy="18" r="3" />
+                <path d="M18 9a9 9 0 01-9 9M6 9v6" />
+              </svg>
+            </div>
+            <div>
+              <h3>Git &amp; Version Control</h3>
+              <span class="skill-level">Advanced</span>
+            </div>
+          </div>
+          <p>Git branching workflows (GitFlow, Trunk-based), interactive rebasing, merge conflict resolution, pre-commit
+            hooks, and repository governance.</p>
+          <div class="skill-pills">
+            <span>Git</span><span>GitHub</span><span>GitLab</span><span>Branch Protection</span><span>Semantic
+              Release</span>
+          </div>
+        </div>
+
+        <!-- AWS -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrap icon-aws">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17.5 19H9a7 7 0 116.71-9h1.79a4.5 4.5 0 110 9z" />
+              </svg>
+            </div>
+            <div>
+              <h3>AWS Cloud Infrastructure</h3>
+              <span class="skill-level">Associate Specialist</span>
+            </div>
+          </div>
+          <p>Multi-AZ VPC setup, EC2, S3, IAM least-privilege policies, RDS PostgreSQL/MySQL, Elastic Kubernetes Service
+            (EKS), Route53, and CloudWatch.</p>
+          <div class="skill-pills">
+            <span>AWS
+              VPC</span><span>EC2</span><span>EKS</span><span>S3</span><span>IAM</span><span>RDS</span><span>CloudWatch</span>
+          </div>
+        </div>
+
+        <!-- Docker -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrap icon-docker">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 10h16M4 14h16M7 6h3M14 6h3M9 18h6" />
+              </svg>
+            </div>
+            <div>
+              <h3>Docker &amp; Containers</h3>
+              <span class="skill-level">Advanced</span>
+            </div>
+          </div>
+          <p>Multi-stage Dockerfile optimization, rootless containers, volume mapping, Docker Compose microservices, and
+            private registry management.</p>
+          <div class="skill-pills">
+            <span>Docker</span><span>Compose</span><span>Multi-stage</span><span>Docker Hub</span><span>AWS ECR</span>
+          </div>
+        </div>
+
+        <!-- Kubernetes -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrap icon-k8s">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M12 3v18M3 12h18M5.5 5.5l13 13M5.5 18.5l13-13" />
+              </svg>
+            </div>
+            <div>
+              <h3>Kubernetes (K8s)</h3>
+              <span class="skill-level">Practitioner</span>
+            </div>
+          </div>
+          <p>Deployments, Services (ClusterIP, NodePort, LoadBalancer), Ingress controllers, Helm charts, ConfigMaps,
+            Secrets, and Autoscaling (HPA).</p>
+          <div class="skill-pills">
+            <span>Kubernetes</span><span>Helm</span><span>Ingress</span><span>ConfigMaps</span><span>HPA</span><span>EKS</span>
+          </div>
+        </div>
+
+        <!-- Networking & Security -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrap icon-network">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                  d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+              </svg>
+            </div>
+            <div>
+              <h3>Networking &amp; Security</h3>
+              <span class="skill-level">Core Engineering</span>
+            </div>
+          </div>
+          <p>TCP/IP model, DNS resolution, Subnetting/CIDR, NGINX reverse proxying, automated SSL/TLS certificates,
+            IPTables, and VPC security groups.</p>
+          <div class="skill-pills">
+            <span>TCP/IP</span><span>DNS</span><span>NGINX</span><span>SSL/TLS</span><span>IPTables</span><span>VPC
+              Peering</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CI/CD Visualizer Section -->
+  <section class="section pipeline-section" id="pipeline">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;automation-flow&gt;</span>
+        <h2 class="section-title">Automated CI/CD Delivery Pipeline</h2>
+        <p class="section-subtitle">How committed code gets tested, packaged, and deployed automatically.</p>
+      </div>
+
+      <div class="pipeline-wrapper">
+        <div class="pipeline-step">
+          <div class="step-badge">01</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="16 18 22 12 16 6" />
+              <polyline points="8 6 2 12 8 18" />
+            </svg>
+          </div>
+          <h4>1. Git Commit</h4>
+          <p>Feature pushed to branch. Automated GitHub Actions workflow triggers via webhook.</p>
+          <span class="step-tool">Git &bull; GitHub</span>
+        </div>
+
+        <div class="pipeline-connector">
+          <span class="conn-arrow">&rarr;</span>
+          <span class="conn-arrow-down">&darr;</span>
+        </div>
+
+        <div class="pipeline-step">
+          <div class="step-badge">02</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+              <polyline points="22 4 12 14.01 9 11.01" />
+            </svg>
+          </div>
+          <h4>2. Lint &amp; Test</h4>
+          <p>Runs automated unit tests, code quality checks, and vulnerability scans.</p>
+          <span class="step-tool">GitHub Actions</span>
+        </div>
+
+        <div class="pipeline-connector">
+          <span class="conn-arrow">&rarr;</span>
+          <span class="conn-arrow-down">&darr;</span>
+        </div>
+
+        <div class="pipeline-step">
+          <div class="step-badge">03</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path
+                d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+            </svg>
+          </div>
+          <h4>3. Containerize</h4>
+          <p>Multi-stage Docker build, vulnerability scanning, pushes image to AWS ECR.</p>
+          <span class="step-tool">Docker &bull; AWS ECR</span>
+        </div>
+
+        <div class="pipeline-connector">
+          <span class="conn-arrow">&rarr;</span>
+          <span class="conn-arrow-down">&darr;</span>
+        </div>
+
+        <div class="pipeline-step">
+          <div class="step-badge">04</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 2 7 12 12 22 7 12 2" />
+              <polyline points="2 17 12 22 22 17" />
+              <polyline points="2 12 12 17 22 12" />
+            </svg>
+          </div>
+          <h4>4. GitOps Deploy</h4>
+          <p>ArgoCD syncs state and triggers zero-downtime rolling update on Kubernetes.</p>
+          <span class="step-tool">Kubernetes &bull; ArgoCD</span>
+        </div>
+
+        <div class="pipeline-connector">
+          <span class="conn-arrow">&rarr;</span>
+          <span class="conn-arrow-down">&darr;</span>
+        </div>
+
+        <div class="pipeline-step">
+          <div class="step-badge">05</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 3v18h18" />
+              <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3" />
+            </svg>
+          </div>
+          <h4>5. Observe &amp; Alert</h4>
+          <p>Continuous monitoring of metrics, cluster logs, and SLA alert triggers.</p>
+          <span class="step-tool">Prometheus &bull; Grafana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education Section -->
+  <section class="section experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;career-path&gt;</span>
+        <h2 class="section-title">Experience &amp; Education</h2>
+        <p class="section-subtitle">Real-world internship experience combined with solid computer science studies.</p>
+      </div>
+
+      <div class="timeline-grid">
+        <!-- Experience Column -->
+        <div class="timeline-col">
+          <h3 class="col-heading">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="7" width="20" height="14" rx="2" />
+              <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
+            </svg>
+            Professional Experience
+          </h3>
+
+          <div class="timeline-card">
+            <div class="card-meta">
+              <span class="period">May 2026 – August 2026</span>
+              <span class="badge-role-tag">Internship</span>
+            </div>
+            <h4 class="timeline-role">Junior DevOps Specialist</h4>
+            <h5 class="timeline-company">Burjsoft</h5>
+            <ul class="timeline-points">
+              <li>Configured and maintained automated GitHub Actions CI/CD workflows for staging and production web
+                applications.</li>
+              <li>Engineered optimized multi-stage Dockerfiles, cutting container image sizes by over 40% and
+                accelerating build times.</li>
+              <li>Administered Linux staging servers (Ubuntu/Debian), configuring automated cron backups, security
+                policies, and NGINX reverse proxies with SSL.</li>
+              <li>Monitored server health, analyzed diagnostic logs, and resolved containerized service incidents.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-card">
+            <div class="card-meta">
+              <span class="period">2025 – Present</span>
+              <span class="badge-role-tag">Worldwide Freelance</span>
+            </div>
+            <h4 class="timeline-role">DevOps &amp; Cloud Consultant</h4>
+            <h5 class="timeline-company">Global Clients &amp; Remote Projects</h5>
+            <ul class="timeline-points">
+              <li>Delivered production-ready cloud architectures and automated pipelines for worldwide clients across
+                diverse industries.</li>
+              <li>Set up secure AWS VPC networking, Docker Compose microservices stacks, and automated database backup
+                routines.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education & Certifications Column -->
+        <div class="timeline-col">
+          <h3 class="col-heading">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+            Education &amp; Credentials
+          </h3>
+
+          <div class="timeline-card">
+            <div class="card-meta">
+              <span class="period">2024 – 2028 (In Progress)</span>
+              <span class="badge-role-tag">Bachelor Degree</span>
+            </div>
+            <h4 class="timeline-role">Bachelor of Science in Computer Science (BS CS)</h4>
+            <h5 class="timeline-company">Computer Science Degree Program</h5>
+            <ul class="timeline-points">
+              <li>Core coursework: Operating Systems Internals, Computer Networks, Distributed Computing, Algorithms,
+                and Cloud Architectures.</li>
+              <li>Applying strong theoretical computing and networking principles directly into DevOps automation.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-card">
+            <div class="card-meta">
+              <span class="period">Government Certification</span>
+              <span class="badge-role-tag">Certified</span>
+            </div>
+            <h4 class="timeline-role">Honhaar Jawan Program Certification</h4>
+            <h5 class="timeline-company">Official Government of Pakistan Initiative</h5>
+            <ul class="timeline-points">
+              <li>Selected for elite government-sponsored technical training specializing in Cloud Computing, Linux
+                SysAdmin, and DevOps Engineering.</li>
+              <li>Successfully completed rigorous hands-on assessments covering AWS infrastructure, containerization,
+                and automated workflows.</li>
+            </ul>
+          </div>
+
+          <div class="timeline-card">
+            <div class="card-meta">
+              <span class="period">Specialization Track</span>
+              <span class="badge-role-tag">Continuous Upskilling</span>
+            </div>
+            <h4 class="timeline-role">AWS &amp; Linux Cloud Track</h4>
+            <h5 class="timeline-company">Industry Standard Modules</h5>
+            <ul class="timeline-points">
+              <li>Mastered AWS Cloud Architecture, VPC Peering, Docker multi-stage builds, and Kubernetes production
+                cluster operations.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Projects Section (7 Projects) -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;production-architectures&gt;</span>
+        <h2 class="section-title">Featured DevOps Projects</h2>
+        <p class="section-subtitle">Real-world infrastructure code, Kubernetes setups, and zero-downtime automation.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filter-tabs">
+        <button class="filter-btn active" data-filter="all">All (7)</button>
+        <button class="filter-btn" data-filter="aws">AWS &amp; Cloud</button>
+        <button class="filter-btn" data-filter="k8s">Kubernetes</button>
+        <button class="filter-btn" data-filter="cicd">CI/CD &amp; GitOps</button>
+        <button class="filter-btn" data-filter="linux">Linux &amp; Security</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card" data-category="aws cicd">
+          <div class="project-header">
+            <span class="project-num">01 / AWS &amp; IaC</span>
+            <span class="project-status-tag">Production Ready</span>
+          </div>
+          <h3 class="project-title">Multi-Tier AWS Web Infrastructure with Terraform &amp; EKS</h3>
+          <p class="project-desc">
+            Designed and provisioned a multi-AZ AWS architecture utilizing Terraform. Includes public/private subnets,
+            NAT Gateways, an Amazon EKS managed Kubernetes cluster, and RDS PostgreSQL with automated snapshots.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">&#x2714; 100% Declarative Infrastructure as Code (Terraform)</div>
+            <div class="highlight-item">&#x2714; Secure private subnets with IAM Least-Privilege roles</div>
+          </div>
+          <div class="project-tech-stack">
+            <span>AWS EKS</span><span>Terraform</span><span>VPC</span><span>RDS</span><span>IAM</span><span>NAT
+              Gateway</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="cicd k8s">
+          <div class="project-header">
+            <span class="project-num">02 / CI/CD &amp; GitOps</span>
+            <span class="project-status-tag">Automated</span>
+          </div>
+          <h3 class="project-title">End-to-End Automated GitOps Pipeline (Actions + ArgoCD)</h3>
+          <p class="project-desc">
+            Created a declarative CI/CD pipeline where code commits trigger automated testing, multi-stage Docker image
+            builds with Trivy security scans, and ArgoCD synchronization for zero-downtime Kubernetes deployments.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">&#x2714; Fully automated Git-to-production deployment cycle</div>
+            <div class="highlight-item">&#x2714; Security vulnerability scanning integrated into CI</div>
+          </div>
+          <div class="project-tech-stack">
+            <span>GitHub Actions</span><span>ArgoCD</span><span>Docker</span><span>Kubernetes</span><span>Trivy</span>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="k8s">
+          <div class="project-header">
+            <span class="project-num">03 / Kubernetes</span>
+            <span class="project-status-tag">High Availability</span>
+          </div>
+          <h3 class="project-title">Production Kubernetes Cluster with Ingress &amp; Cert-Manager</h3>
+          <p class="project-desc">
+            Configured a highly scalable microservices cluster with NGINX Ingress Controller, automatic SSL/TLS
+            certificate generation via Let's Encrypt / Cert-Manager, and Horizontal Pod Autoscaling (HPA) based on
+            CPU/memory load.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">&#x2714; Automated SSL renewal with Cert-Manager</div>
+            <div class="highlight-item">&#x2714; Dynamic traffic distribution and Horizontal Pod Autoscaling</div>
+          </div>
+          <div class="project-tech-stack">
+            <span>Kubernetes</span><span>Helm</span><span>NGINX Ingress</span><span>Cert-Manager</span><span>HPA</span>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card" data-category="linux">
+          <div class="project-header">
+            <span class="project-num">04 / Linux Security</span>
+            <span class="project-status-tag">Hardened</span>
+          </div>
+          <h3 class="project-title">Enterprise Linux Server Hardening &amp; Security Automation</h3>
+          <p class="project-desc">
+            Developed automated Bash automation suites to enforce CIS security benchmarks across Ubuntu and RHEL
+            servers: custom IPTables/UFW rules, SSH key-only access, Fail2ban intrusion prevention, and automated system
+            patching.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">&#x2714; 90% reduction in brute-force attack vectors via Fail2ban</div>
+            <div class="highlight-item">&#x2714; Automated compliance auditing and root login prohibition</div>
+          </div>
+          <div class="project-tech-stack">
+            <span>Linux (Ubuntu/RHEL)</span><span>Bash
+              Scripting</span><span>IPTables</span><span>Fail2ban</span><span>SSH</span>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card" data-category="k8s aws">
+          <div class="project-header">
+            <span class="project-num">05 / Observability</span>
+            <span class="project-status-tag">Monitoring</span>
+          </div>
+          <h3 class="project-title">Full Observability Stack with Prometheus, Grafana &amp; Loki</h3>
+          <p class="project-desc">
+            Deployed a centralized monitoring and log aggregation stack across Linux servers and Kubernetes workloads.
+            Built custom Grafana dashboards for CPU, memory, network I/O, and integrated Alertmanager for incident
+            notifications.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">&#x2714; Real-time infrastructure telemetry and alerting</div>
+            <div class="highlight-item">&#x2714; Consolidated log indexing with Grafana Loki</div>
+          </div>
+          <div class="project-tech-stack">
+            <span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Alertmanager</span><span>Node
+              Exporter</span>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card" data-category="aws linux">
+          <div class="project-header">
+            <span class="project-num">06 / Cloud Networking</span>
+            <span class="project-status-tag">Encrypted</span>
+          </div>
+          <h3 class="project-title">High-Availability Hybrid Cloud VPC Peering &amp; Network Gateway</h3>
+          <p class="project-desc">
+            Engineered secure site-to-site and point-to-site network tunnels connecting on-premise simulated
+            environments to AWS VPCs via WireGuard/OpenVPN. Configured custom routing tables, security groups, and DNS
+            forwarders.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">&#x2714; Encrypted inter-network data transmission</div>
+            <div class="highlight-item">&#x2714; Zero-overlap CIDR subnet allocation &amp; Route Tables</div>
+          </div>
+          <div class="project-tech-stack">
+            <span>AWS VPC Peering</span><span>WireGuard</span><span>Routing Tables</span><span>DNS</span><span>Security
+              Groups</span>
+          </div>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-card" data-category="cicd k8s">
+          <div class="project-header">
+            <span class="project-num">07 / Zero Downtime</span>
+            <span class="project-status-tag">Resilient</span>
+          </div>
+          <h3 class="project-title">Zero-Downtime Blue/Green Deployment with NGINX &amp; Docker</h3>
+          <p class="project-desc">
+            Implemented a robust Blue/Green deployment engine using Docker Compose, automated health-check validation
+            scripts, and dynamic NGINX upstream switching to ensure zero downtime during application upgrades.
+          </p>
+          <div class="project-highlights">
+            <div class="highlight-item">&#x2714; Zero user dropouts during new feature rollouts</div>
+            <div class="highlight-item">&#x2714; Instant automated rollback on failed smoke tests</div>
+          </div>
+          <div class="project-tech-stack">
+            <span>Docker Compose</span><span>NGINX</span><span>Bash Automation</span><span>Health
+              Checks</span><span>Rollbacks</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Terminal Simulator Section -->
+  <section class="section terminal-section" id="terminal">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;cli-environment&gt;</span>
+        <h2 class="section-title">Interactive DevOps Terminal</h2>
+        <p class="section-subtitle">Type standard Linux/DevOps commands below to explore my credentials directly through
+          the CLI.</p>
+      </div>
+
+      <div class="terminal-window">
+        <div class="terminal-header">
+          <div class="window-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <span class="terminal-title">guest@saad-qureshi-devops:~ (bash)</span>
+          <span class="terminal-hint">Type <strong>help</strong></span>
+        </div>
+
+        <div class="terminal-body" id="terminal-body">
+          <div class="terminal-output" id="terminal-output">
+            <div class="terminal-welcome">
+              Welcome to <strong>Saad Hassan Qureshi's</strong> Interactive DevOps CLI.<br />
+              System: Linux 6.8.0-cloud-amd64 | Node: online | Architecture: x86_64<br />
+              Type <span class="text-cmd-help">help</span> or click quick actions below.
+            </div>
+          </div>
+
+          <!-- Quick Command Chips for Mobile -->
+          <div class="terminal-chips">
+            <button type="button" class="term-chip" data-cmd="whoami">whoami</button>
+            <button type="button" class="term-chip" data-cmd="skills">skills</button>
+            <button type="button" class="term-chip" data-cmd="projects">projects</button>
+            <button type="button" class="term-chip" data-cmd="contact">contact</button>
+            <button type="button" class="term-chip" data-cmd="clear">clear</button>
+          </div>
+
+          <div class="terminal-input-line">
+            <span class="terminal-user font-mono">guest@saad:~$</span>
+            <input type="text" id="terminal-input" class="terminal-input font-mono"
+              placeholder="Type a command (e.g. help, skills, whoami)..." autocomplete="off" autocorrect="off"
+              autocapitalize="off" spellcheck="false" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Footer Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;connect&gt;</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Have an open DevOps role, a cloud project, or need automation consulting? Let's
+          talk!</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-col">
+          <div class="contact-card">
+            <h3>Direct Contact Channels</h3>
+            <p>I am available for full-time junior positions, DevOps internships, and freelance infrastructure projects.
+            </p>
+
+            <div class="contact-details">
+              <!-- LinkedIn with user exact link -->
+              <a href="https://www.linkedin.com/in/saad-hassan-qureshi-1460153b9" target="_blank"
+                rel="noopener noreferrer" class="contact-row contact-link">
+                <div class="contact-icon icon-linkedin">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z" />
+                    <rect x="2" y="9" width="4" height="12" />
+                    <circle cx="4" cy="4" r="2" />
+                  </svg>
+                </div>
+                <div class="contact-info-text">
+                  <span class="label">LinkedIn Profile</span>
+                  <span class="val">linkedin.com/in/saad-hassan-qureshi-1460153b9 &nearr;</span>
+                </div>
+              </a>
+
+              <!-- GitHub with user exact link -->
+              <a href="https://github.com/saadqureshiiiii" target="_blank" rel="noopener noreferrer"
+                class="contact-row contact-link">
+                <div class="contact-icon icon-github">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                  </svg>
+                </div>
+                <div class="contact-info-text">
+                  <span class="label">GitHub Profile</span>
+                  <span class="val">github.com/saadqureshiiiii &nearr;</span>
+                </div>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:qurehisaad1860@gmail.com" class="contact-row contact-link">
+                <div class="contact-icon icon-email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div class="contact-info-text">
+                  <span class="label">Email Address</span>
+                  <span class="val">qurehisaad1860@gmail.com</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-col">
+          <form class="contact-form" id="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="john@company.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject / Project Scope</label>
+              <input type="text" id="subject" name="subject" placeholder="DevOps Opportunity / Cloud Infrastructure"
+                required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4"
+                placeholder="Tell me about your infrastructure requirements or open position..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="submit-btn">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="22" y1="2" x2="11" y2="13" />
+                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+              </svg>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-left">
+        <p>&copy; 2026 <strong>Saad Hassan Qureshi</strong>. All rights reserved.</p>
+        <p class="footer-tagline">Engineered for High Availability, Containerization &amp; Continuous Delivery.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#hero" class="back-to-top">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Supabase Client SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+
+</html>
