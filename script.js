@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initNavbarScroll();
   initMobileMenu();
   initEngineeringSnapshot();
+  initSliderTouchControls();
   initProjectFilters();
   initProjectModal();
   initCVModal();
@@ -281,6 +282,9 @@ function initEngineeringSnapshot() {
     `;
   };
 
+  // Render initial active tab on page load
+  renderContent('cloud');
+
   tabs.forEach((tab) => {
     tab.addEventListener('click', () => {
       tabs.forEach((t) => {
@@ -293,6 +297,24 @@ function initEngineeringSnapshot() {
       const tabKey = tab.getAttribute('data-tab');
       renderContent(tabKey);
     });
+  });
+}
+
+// ------------------------------------------------------------------------------
+// Touch Pause Handling for Auto Sliders
+// ------------------------------------------------------------------------------
+function initSliderTouchControls() {
+  const tracks = document.querySelectorAll('.slider-track');
+  tracks.forEach((track) => {
+    track.addEventListener('touchstart', () => {
+      track.style.animationPlayState = 'paused';
+    }, { passive: true });
+
+    track.addEventListener('touchend', () => {
+      setTimeout(() => {
+        track.style.animationPlayState = 'running';
+      }, 800);
+    }, { passive: true });
   });
 }
 
