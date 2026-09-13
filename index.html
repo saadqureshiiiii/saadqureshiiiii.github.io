@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>Saad Hassan Qureshi | DevOps &amp; Cloud Infrastructure Engineer</title>
+  <title>Saad Hasan Qureshi | DevOps &amp; Cloud Engineer</title>
   <meta name="description"
-    content="Portfolio of Saad Hassan Qureshi - Junior DevOps Engineer specializing in Linux, AWS, Docker, Kubernetes, Git, CI/CD, and Cloud Networking." />
-  <meta name="author" content="Saad Hassan Qureshi" />
+    content="Portfolio of Saad Hasan Qureshi - DevOps & Cloud Engineer specializing in AWS, Linux, Docker, Kubernetes, Terraform, Git, CI/CD, and Cloud Networking." />
+  <meta name="author" content="Saad Hasan Qureshi" />
 
   <!-- Google Fonts: Inter & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -27,9 +27,15 @@
     <div class="container status-content">
       <div class="status-left">
         <span class="pulse-dot"></span>
-        <span class="status-text"><strong>Status:</strong> 99.99% Uptime &bull; Open for DevOps Roles</span>
+        <span class="status-text"><strong>Status:</strong> 99.99% Uptime &bull; Available for DevOps &amp; Cloud Engineering Roles</span>
       </div>
-      <a href="#contact" class="status-cta">Get in Touch &rarr;</a>
+      <div class="status-right">
+        <a href="tel:+923248148344" class="status-contact-item">📞 +92 324 8148344</a>
+        <span class="status-divider">&bull;</span>
+        <span class="status-location">📍 Multan, Pakistan</span>
+        <span class="status-divider">&bull;</span>
+        <a href="#contact" class="status-cta">Get in Touch &rarr;</a>
+      </div>
     </div>
   </aside>
 
@@ -47,13 +53,33 @@
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#pipeline" class="nav-link">CI/CD Flow</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
-        <button type="button" class="btn btn-outline btn-sm cv-btn" id="cv-btn-nav">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="btn btn-ghost btn-sm theme-toggle-btn" id="theme-toggle" aria-label="Toggle Light/Dark Theme" title="Toggle Theme">
+          <svg class="btn-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="btn-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+            <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+          </svg>
+        </button>
+
+        <!-- View / Download CV Button -->
+        <button type="button" class="btn btn-outline btn-sm cv-btn" id="cv-btn-nav" title="View & Download CV">
           <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
             <polyline points="14 2 14 8 20 8" />
@@ -82,14 +108,14 @@
           <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
           </svg>
-          <span>DevOps &amp; Cloud Infrastructure</span>
+          <span>DevOps &amp; Cloud Engineer</span>
         </div>
         <h1 class="hero-title">
-          Hi, I'm <span class="text-highlight">Saad Hassan Qureshi</span>.
+          Hi, I'm <span class="text-highlight">Saad Hasan Qureshi</span>.
         </h1>
         <p class="hero-subtitle">
-          Architecting resilient cloud systems, automating high-throughput CI/CD pipelines, and orchestrating container
-          workloads across <strong>Linux, AWS, Docker, and Kubernetes</strong>.
+          Architecting resilient cloud infrastructure, automating high-throughput CI/CD pipelines, and orchestrating container
+          workloads across <strong>AWS, Linux, Docker, Kubernetes, Terraform, and Python</strong>.
         </p>
 
         <!-- Dynamic Stats Counter -->
@@ -99,8 +125,8 @@
             <div class="stat-label">Cloud Projects</div>
           </div>
           <div class="stat-card">
-            <div class="stat-value"><span class="stat-number" data-target="100">0</span>%</div>
-            <div class="stat-label">Containerized</div>
+            <div class="stat-value"><span class="stat-number" data-target="60">0</span>%</div>
+            <div class="stat-label">Faster CI/CD Deploy</div>
           </div>
           <div class="stat-card">
             <div class="stat-value"><span class="stat-number" data-target="99">0</span>.99%</div>
@@ -115,57 +141,81 @@
             </svg>
             Explore Projects
           </a>
+          <!-- Trigger CV Preview Modal -->
           <button type="button" class="btn btn-outline cv-btn" id="cv-btn-hero">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>
+            View CV
+          </button>
+          <!-- Direct Download Link -->
+          <a href="Saad_Hasan_Qureshi_Resume.pdf" download="Saad_Hasan_Qureshi_Resume.pdf" class="btn btn-ghost direct-download-btn" title="Direct PDF Download">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
-            Download CV
-          </button>
+            Download PDF
+          </a>
         </div>
       </div>
 
-      <!-- Hero Terminal / System Monitor Preview -->
+      <!-- Hero Terminal / Interactive Control Node -->
       <div class="hero-card-col">
-        <div class="system-monitor-card">
+        <div class="system-monitor-card" id="terminal-card">
           <div class="card-header-bar">
             <div class="window-dots">
               <span class="dot dot-red"></span>
               <span class="dot dot-yellow"></span>
               <span class="dot dot-green"></span>
             </div>
-            <span class="window-title">saad@infra-control-node:~</span>
+            <span class="window-title">saad@control-node:~ (Interactive CLI)</span>
             <span class="badge-status-live">ONLINE</span>
           </div>
 
           <div class="system-monitor-body">
             <div class="metric-row">
               <span class="metric-name">OS &amp; Kernel:</span>
-              <span class="metric-value font-mono">Linux (Ubuntu / RHEL)</span>
+              <span class="metric-value font-mono">Linux (Ubuntu / RHEL) &bull; Bash</span>
             </div>
             <div class="metric-row">
               <span class="metric-name">Cloud Provider:</span>
-              <span class="metric-value font-mono text-accent">AWS (EKS, VPC, RDS, S3)</span>
+              <span class="metric-value font-mono text-accent">AWS (EKS, VPC, RDS, S3, IAM)</span>
             </div>
             <div class="metric-row">
               <span class="metric-name">Orchestrator:</span>
-              <span class="metric-value font-mono text-cyan">Kubernetes &bull; Docker</span>
+              <span class="metric-value font-mono text-cyan">Kubernetes &bull; Docker &bull; Helm</span>
             </div>
             <div class="metric-row">
               <span class="metric-name">CI/CD &amp; IaC:</span>
               <span class="metric-value font-mono">GitHub Actions &bull; ArgoCD &bull; Terraform</span>
             </div>
             <div class="metric-row">
-              <span class="metric-name">Networking:</span>
-              <span class="metric-value font-mono">TCP/IP &bull; VPC Peering &bull; NGINX</span>
+              <span class="metric-name">Location:</span>
+              <span class="metric-value font-mono">Multan, PK &bull; qurehisaad1860@gmail.com</span>
             </div>
 
-            <div class="code-preview-snippet">
-              <div class="code-line"><span class="code-cmd">$</span> kubectl get pods -n production</div>
-              <div class="code-output text-success">&#x2714; api-gateway-7f89d-9kl2 [1/1 Running]</div>
-              <div class="code-output text-success">&#x2714; auth-service-6b45a-x841 [1/1 Running]</div>
-              <div class="code-output text-success">&#x2714; worker-daemon-5c91z-m2 [1/1 Running]</div>
+            <!-- Interactive Terminal Console Area -->
+            <div class="terminal-interactive-console" id="terminal-console">
+              <div class="terminal-log" id="terminal-log">
+                <div class="code-line"><span class="code-cmd">$</span> welcome --status</div>
+                <div class="code-output text-success">&#x2714; System initialized. Type &quot;help&quot; or click quick commands below:</div>
+                <div class="code-output font-mono text-dim">&#x25AA; Try: <code class="term-hint" data-cmd="skills">skills</code>, <code class="term-hint" data-cmd="projects">projects</code>, <code class="term-hint" data-cmd="get cv">get cv</code>, <code class="term-hint" data-cmd="kubectl get pods">kubectl get pods</code></div>
+              </div>
+              <div class="terminal-prompt-row">
+                <span class="code-cmd">$</span>
+                <input type="text" id="terminal-cli-input" class="terminal-cli-input font-mono" placeholder="Type a command and press Enter..." autocomplete="off" spellcheck="false" />
+              </div>
+            </div>
+
+            <!-- Quick Command Buttons -->
+            <div class="terminal-quick-pills">
+              <button type="button" class="term-pill" data-cmd="cat summary.txt">cat summary</button>
+              <button type="button" class="term-pill" data-cmd="skills">skills</button>
+              <button type="button" class="term-pill" data-cmd="kubectl get pods">kubectl get pods</button>
+              <button type="button" class="term-pill" data-cmd="get cv">get cv</button>
+              <button type="button" class="term-pill" data-cmd="clear">clear</button>
             </div>
           </div>
         </div>
@@ -179,75 +229,67 @@
       <div class="section-header">
         <span class="section-tag">&lt;overview&gt;</span>
         <h2 class="section-title">About Me &amp; Philosophy</h2>
-        <p class="section-subtitle">Bridging the gap between software development and rock-solid cloud infrastructure.
-        </p>
+        <p class="section-subtitle">Bridging the gap between software development and rock-solid cloud infrastructure.</p>
       </div>
 
       <div class="about-grid">
         <div class="about-card main-bio">
-          <h3>DevOps Mindset &amp; Foundation</h3>
+          <h3>DevOps Mindset &amp; Cloud Engineering</h3>
           <p>
-            I am <strong>Saad Hassan Qureshi</strong>, a passionate DevOps and Cloud Infrastructure Specialist currently
-            pursuing my
-            <strong>Bachelor of Science in Computer Science (2024 – 2028)</strong>. I unite deep computer science and
-            networking fundamentals with modern automated cloud practices.
+            I am <strong>Saad Hasan Qureshi</strong>, a Computer Science undergraduate with hands-on experience in cloud infrastructure, DevOps, and database technologies using <strong>AWS, Linux, Docker, Kubernetes, Python, Bash, and Git</strong>.
           </p>
           <p>
-            With practical industry experience as a <strong>Junior DevOps Specialist Intern at Burjsoft (May 2026 –
-              August 2026)</strong> and formal certification under the <strong>Honhaar Jawan Program (Government of
-              Pakistan)</strong>, I engineer systems designed for high availability, automated security (DevSecOps),
-            zero downtime, and fast rollbacks.
+            I build scalable multi-cloud and containerized systems, automated CI/CD pipelines, and infrastructure-as-code deployments. My professional journey includes serving as a <strong>Junior DevOps Specialist Intern at Burjsoft (May 2026 – August 2026)</strong> and acting as a <strong>DevOps &amp; Cloud Consultant for global clients</strong>, consistently driving deployment efficiency up by 40% and cutting incident detection time.
+          </p>
+          <p>
+            Graduating with a <strong>Bachelor of Science in Computer Science from Emerson University Multan (2024 – 2028)</strong>, I combine deep theoretical computer science, operating systems, and networking fundamentals with cutting-edge cloud engineering tools.
           </p>
           <div class="tag-cloud">
-            <span class="tag">Linux SysAdmin</span>
-            <span class="tag">Git &amp; GitHub</span>
-            <span class="tag">AWS Cloud</span>
-            <span class="tag">Docker Containers</span>
-            <span class="tag">Kubernetes</span>
-            <span class="tag">CI/CD Pipelines</span>
+            <span class="tag">AWS Cloud (EKS/VPC/RDS/S3)</span>
+            <span class="tag">Linux SysAdmin &amp; Bash</span>
+            <span class="tag">Docker Containerization</span>
+            <span class="tag">Kubernetes &amp; Helm</span>
+            <span class="tag">GitOps (ArgoCD + Actions)</span>
             <span class="tag">Terraform IaC</span>
-            <span class="tag">Computer Science BS</span>
+            <span class="tag">Python &amp; SQL</span>
+            <span class="tag">DevSecOps &amp; Hardening</span>
+            <span class="tag">Emerson University CS</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Technical Skills Section -->
+  <!-- Technical Skills Section (Categorized as per CV) -->
   <section class="section skills-section" id="skills">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">&lt;tech-stack&gt;</span>
         <h2 class="section-title">Technical Competencies</h2>
-        <p class="section-subtitle">A detailed breakdown of tools, platforms, and protocols in my everyday DevOps
-          toolkit.</p>
+        <p class="section-subtitle">A structured breakdown of tools, platforms, and languages in my everyday DevOps toolkit.</p>
       </div>
 
       <div class="skills-grid">
-        <!-- Linux -->
+        <!-- 1. Cloud: AWS -->
         <div class="skill-card">
           <div class="skill-header">
-            <div class="skill-icon-wrap icon-linux">
+            <div class="skill-icon-wrap icon-aws">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="4" y="4" width="16" height="16" rx="2" />
-                <circle cx="9" cy="9" r="2" />
-                <path d="M15 9h.01M9 15h6" />
+                <path d="M17.5 19H9a7 7 0 116.71-9h1.79a4.5 4.5 0 110 9z" />
               </svg>
             </div>
             <div>
-              <h3>Linux &amp; OS Administration</h3>
-              <span class="skill-level">Core Foundation</span>
+              <h3>Cloud Infrastructure</h3>
+              <span class="skill-level">AWS Specialized</span>
             </div>
           </div>
-          <p>Ubuntu, Debian, RHEL, Bash automation scripting, systemd service management, storage management, and
-            baseline security hardening.</p>
+          <p>Elastic Compute Cloud (EC2), Simple Storage Service (S3), Identity &amp; Access Management (IAM), Virtual Private Cloud (VPC), Relational Database Service (RDS), Route53, and AWS Cloud Architecture fundamentals.</p>
           <div class="skill-pills">
-            <span>Ubuntu</span><span>RHEL</span><span>Bash</span><span>Systemd</span><span>Cron</span><span>SSH
-              Hardening</span>
+            <span>AWS EC2</span><span>AWS S3</span><span>AWS IAM</span><span>AWS VPC</span><span>AWS RDS</span><span>AWS Fundamentals</span>
           </div>
         </div>
 
-        <!-- Git -->
+        <!-- 2. DevOps & CI/CD -->
         <div class="skill-card">
           <div class="skill-header">
             <div class="skill-icon-wrap icon-git">
@@ -259,60 +301,17 @@
               </svg>
             </div>
             <div>
-              <h3>Git &amp; Version Control</h3>
-              <span class="skill-level">Advanced</span>
+              <h3>DevOps &amp; Automation</h3>
+              <span class="skill-level">Continuous Delivery</span>
             </div>
           </div>
-          <p>Git branching workflows (GitFlow, Trunk-based), interactive rebasing, merge conflict resolution, pre-commit
-            hooks, and repository governance.</p>
+          <p>End-to-end CI/CD pipelines, GitOps workflows with ArgoCD, Infrastructure as Code (IaC), GitHub Actions automation, and Jenkins pipeline setup.</p>
           <div class="skill-pills">
-            <span>Git</span><span>GitHub</span><span>GitLab</span><span>Branch Protection</span><span>Semantic
-              Release</span>
+            <span>CI/CD</span><span>GitOps</span><span>IaC</span><span>GitHub Actions</span><span>Basic Jenkins</span><span>ArgoCD</span>
           </div>
         </div>
 
-        <!-- AWS -->
-        <div class="skill-card">
-          <div class="skill-header">
-            <div class="skill-icon-wrap icon-aws">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17.5 19H9a7 7 0 116.71-9h1.79a4.5 4.5 0 110 9z" />
-              </svg>
-            </div>
-            <div>
-              <h3>AWS Cloud Infrastructure</h3>
-              <span class="skill-level">Associate Specialist</span>
-            </div>
-          </div>
-          <p>Multi-AZ VPC setup, EC2, S3, IAM least-privilege policies, RDS PostgreSQL/MySQL, Elastic Kubernetes Service
-            (EKS), Route53, and CloudWatch.</p>
-          <div class="skill-pills">
-            <span>AWS
-              VPC</span><span>EC2</span><span>EKS</span><span>S3</span><span>IAM</span><span>RDS</span><span>CloudWatch</span>
-          </div>
-        </div>
-
-        <!-- Docker -->
-        <div class="skill-card">
-          <div class="skill-header">
-            <div class="skill-icon-wrap icon-docker">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M4 10h16M4 14h16M7 6h3M14 6h3M9 18h6" />
-              </svg>
-            </div>
-            <div>
-              <h3>Docker &amp; Containers</h3>
-              <span class="skill-level">Advanced</span>
-            </div>
-          </div>
-          <p>Multi-stage Dockerfile optimization, rootless containers, volume mapping, Docker Compose microservices, and
-            private registry management.</p>
-          <div class="skill-pills">
-            <span>Docker</span><span>Compose</span><span>Multi-stage</span><span>Docker Hub</span><span>AWS ECR</span>
-          </div>
-        </div>
-
-        <!-- Kubernetes -->
+        <!-- 3. Containers & Tools -->
         <div class="skill-card">
           <div class="skill-header">
             <div class="skill-icon-wrap icon-k8s">
@@ -322,37 +321,75 @@
               </svg>
             </div>
             <div>
-              <h3>Kubernetes (K8s)</h3>
-              <span class="skill-level">Practitioner</span>
+              <h3>Containers &amp; Orchestration</h3>
+              <span class="skill-level">Production Practitioner</span>
             </div>
           </div>
-          <p>Deployments, Services (ClusterIP, NodePort, LoadBalancer), Ingress controllers, Helm charts, ConfigMaps,
-            Secrets, and Autoscaling (HPA).</p>
+          <p>Docker containerization, multi-stage builds, Kubernetes (EKS), Helm charting, Terraform infrastructure automation, and Git distributed version control.</p>
           <div class="skill-pills">
-            <span>Kubernetes</span><span>Helm</span><span>Ingress</span><span>ConfigMaps</span><span>HPA</span><span>EKS</span>
+            <span>Docker</span><span>Kubernetes</span><span>Terraform</span><span>Git</span><span>Helm</span><span>Trivy</span>
           </div>
         </div>
 
-        <!-- Networking & Security -->
+        <!-- 4. Programming & Databases -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrap icon-linux">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+            </div>
+            <div>
+              <h3>Programming &amp; Databases</h3>
+              <span class="skill-level">Core Engineering</span>
+            </div>
+          </div>
+          <p>Python automation scripting, Bash/Shell scripting for Linux system automation, SQL querying, PostgreSQL, and MySQL database administration.</p>
+          <div class="skill-pills">
+            <span>Python</span><span>Bash Scripting</span><span>SQL</span><span>PostgreSQL</span><span>MySQL</span><span>Linux CLI</span>
+          </div>
+        </div>
+
+        <!-- 5. Productivity & Soft Skills -->
         <div class="skill-card">
           <div class="skill-header">
             <div class="skill-icon-wrap icon-network">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="3" />
-                <path
-                  d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z" />
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
               </svg>
             </div>
             <div>
-              <h3>Networking &amp; Security</h3>
-              <span class="skill-level">Core Engineering</span>
+              <h3>Productivity &amp; Collaboration</h3>
+              <span class="skill-level">Professional Agile</span>
             </div>
           </div>
-          <p>TCP/IP model, DNS resolution, Subnetting/CIDR, NGINX reverse proxying, automated SSL/TLS certificates,
-            IPTables, and VPC security groups.</p>
+          <p>Analytical problem solving, cross-functional communication, teamwork, Microsoft Excel, PowerPoint presentations, and technical documentation with Canva.</p>
           <div class="skill-pills">
-            <span>TCP/IP</span><span>DNS</span><span>NGINX</span><span>SSL/TLS</span><span>IPTables</span><span>VPC
-              Peering</span>
+            <span>Problem Solving</span><span>Communication</span><span>Teamwork</span><span>MS Excel</span><span>PowerPoint</span><span>Canva</span>
+          </div>
+        </div>
+
+        <!-- 6. Networking & Security (DevSecOps) -->
+        <div class="skill-card">
+          <div class="skill-header">
+            <div class="skill-icon-wrap icon-docker">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
+            <div>
+              <h3>DevSecOps &amp; Networking</h3>
+              <span class="skill-level">Hardened Systems</span>
+            </div>
+          </div>
+          <p>TCP/IP, VPC Peering, NGINX Ingress &amp; Reverse Proxy, SSL/TLS automated certificates (Cert-Manager), Linux security benchmarks, and Trivy vulnerability scans.</p>
+          <div class="skill-pills">
+            <span>TCP/IP</span><span>VPC Peering</span><span>NGINX</span><span>SSL/TLS</span><span>Linux Hardening</span><span>Cert-Manager</span>
           </div>
         </div>
       </div>
@@ -365,7 +402,7 @@
       <div class="section-header">
         <span class="section-tag">&lt;automation-flow&gt;</span>
         <h2 class="section-title">Automated CI/CD Delivery Pipeline</h2>
-        <p class="section-subtitle">How committed code gets tested, packaged, and deployed automatically.</p>
+        <p class="section-subtitle">How committed code gets tested, scanned, containerized, and deployed automatically.</p>
       </div>
 
       <div class="pipeline-wrapper">
@@ -378,7 +415,7 @@
             </svg>
           </div>
           <h4>1. Git Commit</h4>
-          <p>Feature pushed to branch. Automated GitHub Actions workflow triggers via webhook.</p>
+          <p>Feature pushed to branch. Automated GitHub Actions workflow triggers instantly via webhook.</p>
           <span class="step-tool">Git &bull; GitHub</span>
         </div>
 
@@ -395,9 +432,9 @@
               <polyline points="22 4 12 14.01 9 11.01" />
             </svg>
           </div>
-          <h4>2. Lint &amp; Test</h4>
-          <p>Runs automated unit tests, code quality checks, and vulnerability scans.</p>
-          <span class="step-tool">GitHub Actions</span>
+          <h4>2. Lint, Test &amp; Scan</h4>
+          <p>Runs automated unit tests, code quality checks, and Trivy vulnerability scans.</p>
+          <span class="step-tool">GitHub Actions &bull; Trivy</span>
         </div>
 
         <div class="pipeline-connector">
@@ -414,7 +451,7 @@
             </svg>
           </div>
           <h4>3. Containerize</h4>
-          <p>Multi-stage Docker build, vulnerability scanning, pushes image to AWS ECR.</p>
+          <p>Multi-stage Docker build, image optimization, pushes verified image to AWS ECR.</p>
           <span class="step-tool">Docker &bull; AWS ECR</span>
         </div>
 
@@ -433,7 +470,7 @@
             </svg>
           </div>
           <h4>4. GitOps Deploy</h4>
-          <p>ArgoCD syncs state and triggers zero-downtime rolling update on Kubernetes.</p>
+          <p>ArgoCD syncs state and triggers zero-downtime rolling update on Kubernetes (EKS).</p>
           <span class="step-tool">Kubernetes &bull; ArgoCD</span>
         </div>
 
@@ -451,115 +488,161 @@
             </svg>
           </div>
           <h4>5. Observe &amp; Alert</h4>
-          <p>Continuous monitoring of metrics, cluster logs, and SLA alert triggers.</p>
-          <span class="step-tool">Prometheus &bull; Grafana</span>
+          <p>Continuous monitoring with Prometheus, Loki log indexing, Grafana dashboards, &amp; Alertmanager.</p>
+          <span class="step-tool">Prometheus &bull; Grafana &bull; Loki</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Experience & Education Section -->
+  <!-- Experience Section -->
   <section class="section experience-section" id="experience">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">&lt;career-path&gt;</span>
-        <h2 class="section-title">Experience &amp; Education</h2>
-        <p class="section-subtitle">Real-world internship experience combined with solid computer science studies.</p>
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">Hands-on industry internship work and global client DevOps consulting.</p>
+      </div>
+
+      <div class="timeline-grid single-col-grid">
+        <div class="timeline-card experience-card">
+          <div class="card-meta">
+            <span class="period">May 2026 – August 2026</span>
+            <span class="badge-role-tag">Internship</span>
+          </div>
+          <h4 class="timeline-role">Junior DevOps Specialist</h4>
+          <h5 class="timeline-company">Burjsoft</h5>
+          <ul class="timeline-points">
+            <li>Assisted with AWS infrastructure management, Linux server administration, Docker containerization, and CI/CD automation.</li>
+            <li>Improved deployment workflows by <strong>~25%</strong> through automation scripts and industry DevOps practices.</li>
+            <li>Collaborated with development teams to resolve deployment bottlenecks and maintain high system reliability.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-card experience-card">
+          <div class="card-meta">
+            <span class="period">Worldwide Freelance</span>
+            <span class="badge-role-tag">Client Consulting</span>
+          </div>
+          <h4 class="timeline-role">DevOps &amp; Cloud Consultant</h4>
+          <h5 class="timeline-company">Global Clients &amp; Remote Projects</h5>
+          <ul class="timeline-points">
+            <li>Delivered scalable cloud infrastructure, automated CI/CD pipelines, and containerization solutions for international clients.</li>
+            <li>Improved deployment efficiency by <strong>~40%</strong>, helping businesses scale faster and reliably with zero-downtime rollouts.</li>
+            <li>Configured secure AWS VPCs, EKS Kubernetes clusters, and automated monitoring dashboards.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education & Certifications Section -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">&lt;credentials&gt;</span>
+        <h2 class="section-title">Education &amp; Certifications</h2>
+        <p class="section-subtitle">Academic foundations in Computer Science paired with recognized cloud certifications.</p>
       </div>
 
       <div class="timeline-grid">
-        <!-- Experience Column -->
-        <div class="timeline-col">
-          <h3 class="col-heading">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="7" width="20" height="14" rx="2" />
-              <path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16" />
-            </svg>
-            Professional Experience
-          </h3>
-
-          <div class="timeline-card">
-            <div class="card-meta">
-              <span class="period">May 2026 – August 2026</span>
-              <span class="badge-role-tag">Internship</span>
-            </div>
-            <h4 class="timeline-role">Junior DevOps Specialist</h4>
-            <h5 class="timeline-company">Burjsoft</h5>
-          </div>
-
-          <div class="timeline-card">
-            <div class="card-meta">
-              <span class="period">2025 – Present</span>
-              <span class="badge-role-tag">Worldwide Freelance</span>
-            </div>
-            <h4 class="timeline-role">DevOps &amp; Cloud Consultant</h4>
-            <h5 class="timeline-company">Global Clients &amp; Remote Projects</h5>
-          </div>
-        </div>
-
-        <!-- Education & Certifications Column -->
+        <!-- Education Column -->
         <div class="timeline-col">
           <h3 class="col-heading">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
               <path d="M6 12v5c3 3 9 3 12 0v-5" />
             </svg>
-            Education &amp; Credentials
+            Formal Education
           </h3>
 
           <div class="timeline-card">
             <div class="card-meta">
-              <span class="period">2024 – 2028 (In Progress)</span>
+              <span class="period">Sep 2024 – Jun 2028</span>
               <span class="badge-role-tag">Bachelor Degree</span>
             </div>
-            <h4 class="timeline-role">Bachelor of Science in Computer Science (BS CS)</h4>
-            <h5 class="timeline-company">Computer Science Degree Program</h5>
+            <h4 class="timeline-role">Bachelor in Computer Science (BS CS)</h4>
+            <h5 class="timeline-company">Emerson University Multan</h5>
             <ul class="timeline-points">
-              <li>Core coursework: Operating Systems Internals, Computer Networks, Distributed Computing, Algorithms,
-                and Cloud Architectures.</li>
-              <li>Applying strong theoretical computing and networking principles directly into DevOps automation.</li>
+              <li>Comprehensive study in Operating Systems Internals, Computer Networks, Distributed Systems, Database Management Systems, and Cloud Architectures.</li>
+              <li>Applying strong theoretical computing and networking principles directly to cloud infrastructure automation.</li>
             </ul>
           </div>
 
           <div class="timeline-card">
             <div class="card-meta">
-              <span class="period">Government Certification</span>
-              <span class="badge-role-tag">Certified</span>
+              <span class="period">Jun 2021 – Aug 2023</span>
+              <span class="badge-role-tag">Intermediate</span>
             </div>
-            <h4 class="timeline-role">Honhaar Jawan Program Certification</h4>
-            <h5 class="timeline-company">Official Government of Pakistan Initiative</h5>
+            <h4 class="timeline-role">Intermediate (Pre-Engineering / ICS)</h4>
+            <h5 class="timeline-company">Multan Public School &amp; College, Multan</h5>
             <ul class="timeline-points">
-              <li>Selected for elite government-sponsored technical training specializing in Cloud Computing, Linux
-                SysAdmin, and DevOps Engineering.</li>
-              <li>Successfully completed rigorous hands-on assessments covering AWS infrastructure, containerization,
-                and automated workflows.</li>
+              <li>Strong foundation in advanced Mathematics, Physics, and Computer Sciences.</li>
             </ul>
           </div>
+        </div>
 
-          <div class="timeline-card">
+        <!-- Certifications Column -->
+        <div class="timeline-col">
+          <h3 class="col-heading">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="8" r="7"></circle>
+              <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+            </svg>
+            Certifications &amp; Courses
+          </h3>
+
+          <div class="timeline-card cert-card">
             <div class="card-meta">
-              <span class="period">Specialization Track</span>
-              <span class="badge-role-tag">Continuous Upskilling</span>
+              <span class="period">Government of Pakistan</span>
+              <span class="badge-role-tag cert-badge">Official Initiative</span>
             </div>
-            <h4 class="timeline-role">AWS &amp; Linux Cloud Track</h4>
-            <h5 class="timeline-company">Industry Standard Modules</h5>
-            <ul class="timeline-points">
-              <li>Mastered AWS Cloud Architecture, VPC Peering, Docker multi-stage builds, and Kubernetes production
-                cluster operations.</li>
-            </ul>
+            <h4 class="timeline-role">Honhaar Jawan Program</h4>
+            <h5 class="timeline-company">AWS DevOps Engineer Track, Python, Ethical Hacking &amp; Cybersecurity</h5>
+            <p class="cert-desc">Rigorous government-sponsored elite track covering AWS architecture, Linux administration, Python scripting, and security auditing.</p>
+          </div>
+
+          <div class="timeline-card cert-card">
+            <div class="card-meta">
+              <span class="period">Udemy</span>
+              <span class="badge-role-tag cert-badge">Bootcamp</span>
+            </div>
+            <h4 class="timeline-role">Linux Administration Bootcamp</h4>
+            <h5 class="timeline-company">Udemy Verified Credential</h5>
+            <p class="cert-desc">Hands-on mastery of system administration, Bash automation, user management, storage, and server hardening on Ubuntu and RHEL.</p>
+          </div>
+
+          <div class="timeline-card cert-card">
+            <div class="card-meta">
+              <span class="period">Deloitte</span>
+              <span class="badge-role-tag cert-badge">Job Simulation</span>
+            </div>
+            <h4 class="timeline-role">Data Analytics Job Simulation</h4>
+            <h5 class="timeline-company">Deloitte / Forage</h5>
+            <p class="cert-desc">Practical simulation analyzing datasets, extracting business telemetry insights, and communicating metrics with stakeholders.</p>
+          </div>
+
+          <div class="timeline-card cert-card">
+            <div class="card-meta">
+              <span class="period">DataCamp</span>
+              <span class="badge-role-tag cert-badge">Cloud Track</span>
+            </div>
+            <h4 class="timeline-role">Understanding Cloud Computing</h4>
+            <h5 class="timeline-company">DataCamp Verified</h5>
+            <p class="cert-desc">Core cloud paradigms: IaaS, PaaS, SaaS, elasticity, virtualization, security governance, and multi-region architectures.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Featured Projects Section (7 Projects) -->
+  <!-- Featured Projects Section (Synchronized with CV Projects) -->
   <section class="section projects-section" id="projects">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">&lt;production-architectures&gt;</span>
         <h2 class="section-title">Featured DevOps Projects</h2>
-        <p class="section-subtitle">Real-world infrastructure code, Kubernetes setups, and zero-downtime automation.</p>
+        <p class="section-subtitle">Real-world infrastructure code, GitOps pipelines, and zero-downtime automation with measurable impacts.</p>
       </div>
 
       <!-- Filter Buttons -->
@@ -574,152 +657,136 @@
       <!-- Projects Grid -->
       <div class="projects-grid">
 
-        <!-- Project 1 -->
+        <!-- Project 1: Multi-Tier AWS Infrastructure -->
         <article class="project-card" data-category="aws cicd">
           <div class="project-header">
             <span class="project-num">01 / AWS &amp; IaC</span>
-            <span class="project-status-tag">Production Ready</span>
+            <span class="project-metric-badge">+30% Scalability</span>
           </div>
-          <h3 class="project-title">Multi-Tier AWS Web Infrastructure with Terraform &amp; EKS</h3>
+          <h3 class="project-title">Multi-Tier AWS Infrastructure with Terraform &amp; EKS</h3>
           <p class="project-desc">
-            Designed and provisioned a multi-AZ AWS architecture utilizing Terraform. Includes public/private subnets,
-            NAT Gateways, an Amazon EKS managed Kubernetes cluster, and RDS PostgreSQL with automated snapshots.
+            Built scalable, multi-AZ AWS infrastructure using Terraform, Amazon EKS, VPC, and RDS. Designed secure public/private subnets, NAT gateways, and automated RDS snapshots.
           </p>
           <div class="project-highlights">
-            <div class="highlight-item">&#x2714; 100% Declarative Infrastructure as Code (Terraform)</div>
-            <div class="highlight-item">&#x2714; Secure private subnets with IAM Least-Privilege roles</div>
+            <div class="highlight-item">&#x2714; Improved scalability by <strong>~30%</strong>, supporting business and traffic growth.</div>
+            <div class="highlight-item">&#x2714; 100% Declarative Infrastructure as Code (Terraform) with least-privilege IAM.</div>
           </div>
           <div class="project-tech-stack">
-            <span>AWS EKS</span><span>Terraform</span><span>VPC</span><span>RDS</span><span>IAM</span><span>NAT
-              Gateway</span>
+            <span>AWS EKS</span><span>Terraform</span><span>VPC</span><span>RDS</span><span>IAM</span><span>NAT Gateway</span>
           </div>
         </article>
 
-        <!-- Project 2 -->
+        <!-- Project 2: GitOps CI/CD Pipeline -->
         <article class="project-card" data-category="cicd k8s">
           <div class="project-header">
             <span class="project-num">02 / CI/CD &amp; GitOps</span>
-            <span class="project-status-tag">Automated</span>
+            <span class="project-metric-badge">-60% Deploy Time</span>
           </div>
-          <h3 class="project-title">End-to-End Automated GitOps Pipeline (Actions + ArgoCD)</h3>
+          <h3 class="project-title">GitOps CI/CD Pipeline (Actions + Docker + Argo CD)</h3>
           <p class="project-desc">
-            Created a declarative CI/CD pipeline where code commits trigger automated testing, multi-stage Docker image
-            builds with Trivy security scans, and ArgoCD synchronization for zero-downtime Kubernetes deployments.
+            Automated declarative CI/CD using GitHub Actions, Docker multi-stage builds, Trivy container security vulnerability scanning, and Argo CD for GitOps sync on Kubernetes.
           </p>
           <div class="project-highlights">
-            <div class="highlight-item">&#x2714; Fully automated Git-to-production deployment cycle</div>
-            <div class="highlight-item">&#x2714; Security vulnerability scanning integrated into CI</div>
+            <div class="highlight-item">&#x2714; Reduced deployment time by <strong>~60%</strong>, accelerating product releases.</div>
+            <div class="highlight-item">&#x2714; Automated Trivy vulnerability scans in CI before container registry push.</div>
           </div>
           <div class="project-tech-stack">
-            <span>GitHub Actions</span><span>ArgoCD</span><span>Docker</span><span>Kubernetes</span><span>Trivy</span>
+            <span>GitHub Actions</span><span>Docker</span><span>Trivy</span><span>Argo CD</span><span>Kubernetes</span>
           </div>
         </article>
 
-        <!-- Project 3 -->
+        <!-- Project 3: Production Kubernetes Platform -->
         <article class="project-card" data-category="k8s">
           <div class="project-header">
             <span class="project-num">03 / Kubernetes</span>
-            <span class="project-status-tag">High Availability</span>
+            <span class="project-metric-badge">+40% App Scale</span>
           </div>
-          <h3 class="project-title">Production Kubernetes Cluster with Ingress &amp; Cert-Manager</h3>
+          <h3 class="project-title">Production Kubernetes Platform with Ingress &amp; HPA</h3>
           <p class="project-desc">
-            Configured a highly scalable microservices cluster with NGINX Ingress Controller, automatic SSL/TLS
-            certificate generation via Let's Encrypt / Cert-Manager, and Horizontal Pod Autoscaling (HPA) based on
-            CPU/memory load.
+            Deployed Kubernetes with Helm charts, NGINX Ingress Controller, Horizontal Pod Autoscaling (HPA), and Cert-Manager for automated Let's Encrypt SSL/TLS certificates.
           </p>
           <div class="project-highlights">
-            <div class="highlight-item">&#x2714; Automated SSL renewal with Cert-Manager</div>
-            <div class="highlight-item">&#x2714; Dynamic traffic distribution and Horizontal Pod Autoscaling</div>
+            <div class="highlight-item">&#x2714; Improved application scalability by <strong>~40%</strong>, supporting growing workloads.</div>
+            <div class="highlight-item">&#x2714; Zero-downtime rolling deployments and dynamic traffic management.</div>
           </div>
           <div class="project-tech-stack">
-            <span>Kubernetes</span><span>Helm</span><span>NGINX Ingress</span><span>Cert-Manager</span><span>HPA</span>
+            <span>Kubernetes</span><span>Helm</span><span>NGINX Ingress</span><span>HPA</span><span>Cert-Manager</span>
           </div>
         </article>
 
-        <!-- Project 4 -->
+        <!-- Project 4: DevSecOps Security Automation -->
         <article class="project-card" data-category="linux">
           <div class="project-header">
-            <span class="project-num">04 / Linux Security</span>
-            <span class="project-status-tag">Hardened</span>
+            <span class="project-num">04 / DevSecOps</span>
+            <span class="project-metric-badge">-50% Sec Effort</span>
           </div>
-          <h3 class="project-title">Enterprise Linux Server Hardening &amp; Security Automation</h3>
+          <h3 class="project-title">DevSecOps Security Automation &amp; Linux Hardening</h3>
           <p class="project-desc">
-            Developed automated Bash automation suites to enforce CIS security benchmarks across Ubuntu and RHEL
-            servers: custom IPTables/UFW rules, SSH key-only access, Fail2ban intrusion prevention, and automated system
-            patching.
+            Automated Linux server hardening, vulnerability scanning, and security audits using custom Bash automation scripts, IPTables firewalls, Fail2ban, and SSH key policies.
           </p>
           <div class="project-highlights">
-            <div class="highlight-item">&#x2714; 90% reduction in brute-force attack vectors via Fail2ban</div>
-            <div class="highlight-item">&#x2714; Automated compliance auditing and root login prohibition</div>
+            <div class="highlight-item">&#x2714; Reduced security maintenance effort by <strong>~50%</strong>, lowering operational risk.</div>
+            <div class="highlight-item">&#x2714; Automated compliance checks against CIS security benchmarks.</div>
           </div>
           <div class="project-tech-stack">
-            <span>Linux (Ubuntu/RHEL)</span><span>Bash
-              Scripting</span><span>IPTables</span><span>Fail2ban</span><span>SSH</span>
+            <span>Linux (Ubuntu/RHEL)</span><span>Bash Automation</span><span>IPTables</span><span>Fail2ban</span><span>SSH Hardening</span>
           </div>
         </article>
 
-        <!-- Project 5 -->
+        <!-- Project 5: Cloud Monitoring & Observability -->
         <article class="project-card" data-category="k8s aws">
           <div class="project-header">
             <span class="project-num">05 / Observability</span>
-            <span class="project-status-tag">Monitoring</span>
+            <span class="project-metric-badge">-45% Incident Time</span>
           </div>
-          <h3 class="project-title">Full Observability Stack with Prometheus, Grafana &amp; Loki</h3>
+          <h3 class="project-title">Cloud Monitoring &amp; Observability Stack</h3>
           <p class="project-desc">
-            Deployed a centralized monitoring and log aggregation stack across Linux servers and Kubernetes workloads.
-            Built custom Grafana dashboards for CPU, memory, network I/O, and integrated Alertmanager for incident
-            notifications.
+            Deployed Prometheus, Grafana, Loki, and Alertmanager for full-stack telemetry monitoring and centralized log indexing across Linux servers and Kubernetes clusters.
           </p>
           <div class="project-highlights">
-            <div class="highlight-item">&#x2714; Real-time infrastructure telemetry and alerting</div>
-            <div class="highlight-item">&#x2714; Consolidated log indexing with Grafana Loki</div>
+            <div class="highlight-item">&#x2714; Reduced incident detection time by <strong>~45%</strong>, minimizing business downtime.</div>
+            <div class="highlight-item">&#x2714; Customized Grafana visual dashboards with automated Slack/Email alert rules.</div>
           </div>
           <div class="project-tech-stack">
-            <span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Alertmanager</span><span>Node
-              Exporter</span>
+            <span>Prometheus</span><span>Grafana</span><span>Loki</span><span>Alertmanager</span><span>Node Exporter</span>
           </div>
         </article>
 
-        <!-- Project 6 -->
+        <!-- Project 6: Cloud Networking & VPC Peering -->
         <article class="project-card" data-category="aws linux">
           <div class="project-header">
             <span class="project-num">06 / Cloud Networking</span>
-            <span class="project-status-tag">Encrypted</span>
+            <span class="project-metric-badge">Encrypted Mesh</span>
           </div>
-          <h3 class="project-title">High-Availability Hybrid Cloud VPC Peering &amp; Network Gateway</h3>
+          <h3 class="project-title">High-Availability Hybrid Cloud VPC Peering &amp; Gateway</h3>
           <p class="project-desc">
-            Engineered secure site-to-site and point-to-site network tunnels connecting on-premise simulated
-            environments to AWS VPCs via WireGuard/OpenVPN. Configured custom routing tables, security groups, and DNS
-            forwarders.
+            Engineered encrypted network tunnels connecting simulated on-premise environments to AWS VPCs via WireGuard/OpenVPN with Route Tables and security groups.
           </p>
           <div class="project-highlights">
-            <div class="highlight-item">&#x2714; Encrypted inter-network data transmission</div>
-            <div class="highlight-item">&#x2714; Zero-overlap CIDR subnet allocation &amp; Route Tables</div>
+            <div class="highlight-item">&#x2714; High-throughput encrypted inter-network data transmission.</div>
+            <div class="highlight-item">&#x2714; Zero-overlap CIDR allocation and customized routing rules.</div>
           </div>
           <div class="project-tech-stack">
-            <span>AWS VPC Peering</span><span>WireGuard</span><span>Routing Tables</span><span>DNS</span><span>Security
-              Groups</span>
+            <span>AWS VPC Peering</span><span>WireGuard</span><span>Routing Tables</span><span>DNS</span><span>Security Groups</span>
           </div>
         </article>
 
-        <!-- Project 7 -->
+        <!-- Project 7: Zero-Downtime Blue/Green Deployment -->
         <article class="project-card" data-category="cicd k8s">
           <div class="project-header">
             <span class="project-num">07 / Zero Downtime</span>
-            <span class="project-status-tag">Resilient</span>
+            <span class="project-metric-badge">Zero Dropouts</span>
           </div>
-          <h3 class="project-title">Zero-Downtime Blue/Green Deployment with NGINX &amp; Docker</h3>
+          <h3 class="project-title">Zero-Downtime Blue/Green Deployment Engine</h3>
           <p class="project-desc">
-            Implemented a robust Blue/Green deployment engine using Docker Compose, automated health-check validation
-            scripts, and dynamic NGINX upstream switching to ensure zero downtime during application upgrades.
+            Implemented a Blue/Green deployment engine using Docker Compose, automated health-check scripts, and dynamic NGINX upstream switching for instant zero-downtime rollouts and fallbacks.
           </p>
           <div class="project-highlights">
-            <div class="highlight-item">&#x2714; Zero user dropouts during new feature rollouts</div>
-            <div class="highlight-item">&#x2714; Instant automated rollback on failed smoke tests</div>
+            <div class="highlight-item">&#x2714; Seamless traffic switching with automated smoke test validation.</div>
+            <div class="highlight-item">&#x2714; Instant rollback capability in case of container health degradation.</div>
           </div>
           <div class="project-tech-stack">
-            <span>Docker Compose</span><span>NGINX</span><span>Bash Automation</span><span>Health
-              Checks</span><span>Rollbacks</span>
+            <span>Docker Compose</span><span>NGINX</span><span>Bash Scripting</span><span>Health Checks</span><span>Rollbacks</span>
           </div>
         </article>
 
@@ -727,25 +794,50 @@
     </div>
   </section>
 
-  <!-- Contact & Footer Section -->
+  <!-- Contact Section -->
   <section class="section contact-section" id="contact">
     <div class="container">
       <div class="section-header">
         <span class="section-tag">&lt;connect&gt;</span>
         <h2 class="section-title">Get in Touch</h2>
-        <p class="section-subtitle">Have an open DevOps role, a cloud project, or need automation consulting? Let's
-          talk!</p>
+        <p class="section-subtitle">Have an open DevOps role, cloud infrastructure project, or consulting inquiry? Let's connect!</p>
       </div>
 
       <div class="contact-grid">
         <div class="contact-info-col">
           <div class="contact-card">
             <h3>Direct Contact Channels</h3>
-            <p>I am available for full-time junior positions, DevOps internships, and freelance infrastructure projects.
-            </p>
+            <p>I am available for full-time junior positions, DevOps internships, and freelance infrastructure projects worldwide.</p>
 
             <div class="contact-details">
-              <!-- LinkedIn with user exact link -->
+              <!-- Phone / WhatsApp -->
+              <a href="tel:+923248148344" class="contact-row contact-link">
+                <div class="contact-icon icon-phone">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-info-text">
+                  <span class="label">Phone / WhatsApp</span>
+                  <span class="val">+92 324 8148344 &nearr;</span>
+                </div>
+              </a>
+
+              <!-- Email -->
+              <a href="mailto:qurehisaad1860@gmail.com" class="contact-row contact-link">
+                <div class="contact-icon icon-email">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div class="contact-info-text">
+                  <span class="label">Email Address</span>
+                  <span class="val">qurehisaad1860@gmail.com &nearr;</span>
+                </div>
+              </a>
+
+              <!-- LinkedIn -->
               <a href="https://www.linkedin.com/in/saad-hassan-qureshi-1460153b9" target="_blank"
                 rel="noopener noreferrer" class="contact-row contact-link">
                 <div class="contact-icon icon-linkedin">
@@ -761,34 +853,34 @@
                 </div>
               </a>
 
-              <!-- GitHub with user exact link -->
-              <a href="https://github.com/saadqureshiiiii" target="_blank" rel="noopener noreferrer"
-                class="contact-row contact-link">
-                <div class="contact-icon icon-github">
+              <!-- Website / Portfolio -->
+              <a href="https://www.saadsystems.me" target="_blank" rel="noopener noreferrer" class="contact-row contact-link">
+                <div class="contact-icon icon-globe">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22" />
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
                   </svg>
                 </div>
                 <div class="contact-info-text">
-                  <span class="label">GitHub Profile</span>
-                  <span class="val">github.com/saadqureshiiiii &nearr;</span>
+                  <span class="label">Official Website</span>
+                  <span class="val">www.saadsystems.me &nearr;</span>
                 </div>
               </a>
 
-              <!-- Email -->
-              <a href="mailto:qurehisaad1860@gmail.com" class="contact-row contact-link">
-                <div class="contact-icon icon-email">
+              <!-- Location -->
+              <div class="contact-row">
+                <div class="contact-icon icon-location">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                    <polyline points="22,6 12,13 2,6" />
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
                   </svg>
                 </div>
                 <div class="contact-info-text">
-                  <span class="label">Email Address</span>
-                  <span class="val">qurehisaad1860@gmail.com</span>
+                  <span class="label">Location</span>
+                  <span class="val">Multan, Pakistan (Open to Remote Worldwide)</span>
                 </div>
-              </a>
+              </div>
             </div>
           </div>
         </div>
@@ -830,12 +922,71 @@
     </div>
   </section>
 
+  <!-- Interactive CV Preview Modal -->
+  <div class="cv-modal-backdrop" id="cv-modal" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+    <div class="cv-modal-container">
+      <div class="cv-modal-header">
+        <div class="cv-modal-title-wrap">
+          <svg class="btn-icon text-accent" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+            <polyline points="14 2 14 8 20 8" />
+          </svg>
+          <h3 id="cv-modal-title">Saad Hasan Qureshi — Curriculum Vitae</h3>
+        </div>
+        <div class="cv-modal-actions">
+          <a href="Saad_Hasan_Qureshi_Resume.pdf" download="Saad_Hasan_Qureshi_Resume.pdf" class="btn btn-primary btn-sm">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            Download PDF
+          </a>
+          <a href="Saad_Hasan_Qureshi_Resume.pdf" target="_blank" rel="noopener" class="btn btn-outline btn-sm" title="Open PDF in new tab">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            Open Tab
+          </a>
+          <button type="button" class="cv-modal-close" id="cv-modal-close" aria-label="Close CV Modal">&times;</button>
+        </div>
+      </div>
+      <div class="cv-modal-body">
+        <iframe src="Saad_Hasan_Qureshi_Resume.pdf#toolbar=1" class="cv-pdf-iframe" title="Saad Hasan Qureshi CV"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Quick Action Dock -->
+  <div class="floating-dock" id="floating-dock">
+    <button type="button" class="dock-btn dock-cv-btn cv-btn" title="View CV">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+        <polyline points="14 2 14 8 20 8" />
+        <line x1="12" y1="18" x2="12" y2="12" />
+      </svg>
+      <span class="dock-tooltip">View CV</span>
+    </button>
+    <a href="https://wa.me/923248148344" target="_blank" rel="noopener noreferrer" class="dock-btn dock-whatsapp-btn" title="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+      </svg>
+      <span class="dock-tooltip">WhatsApp</span>
+    </a>
+  </div>
+
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
       <div class="footer-left">
-        <p>&copy; 2026 <strong>Saad Hassan Qureshi</strong>. All rights reserved.</p>
-        <p class="footer-tagline">Engineered for High Availability, Containerization &amp; Continuous Delivery.</p>
+        <p>&copy; 2026 <strong>Saad Hasan Qureshi</strong>. All rights reserved.</p>
+        <p class="footer-tagline">DevOps &amp; Cloud Infrastructure Engineer &bull; Engineered for High Availability &amp; Zero Downtime.</p>
+        <a href="https://websitelaunches.com/site/saadsystems.me" target="_blank" rel="noopener" class="footer-badge-link">
+          <img src="https://websitelaunches.com/badge/saadsystems.me.svg" alt="Established online - Public launch record"
+            width="255" height="55">
+        </a>
       </div>
       <div class="footer-right">
         <a href="#hero" class="back-to-top">Back to top &uarr;</a>
@@ -851,6 +1002,7 @@
 
   <!-- JavaScript -->
   <script src="script.js"></script>
+
 </body>
 
 </html>
